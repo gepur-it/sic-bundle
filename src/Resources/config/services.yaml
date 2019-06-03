@@ -1,0 +1,5 @@
+services:
+  GepurIt\SingleInstanceCommandBundle\EventListener\SingleCommandStartedEventListener:
+    autowire: true
+    tags:
+      - { name: "kernel.event_listener", event: "console.command", method: "onConsoleCommand", priority: 0 }

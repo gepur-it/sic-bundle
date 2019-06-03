@@ -1,0 +1,33 @@
+{
+    "name": "gepur-it/sic-bundle",
+    "description": "Single Instance Command Bundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Andrii Yakovlev",
+            "email": "yawa20@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GepurIt\\SingleInstanceCommandBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GepurIt\\Tests\\SingleInstanceCommandBundle\\": "Tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2",
+        "symfony/console": "^4.2",
+        "symfony/lock": "^4.2",
+        "symfony/dependency-injection": "^4.2",
+        "symfony/config": "^4.2",
+        "symfony/event-dispatcher": "^4.2"
+    }
+}
