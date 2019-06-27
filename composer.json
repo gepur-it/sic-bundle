@@ -3,7 +3,7 @@
     "description": "Single Instance Command Bundle",
     "type": "symfony-bundle",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "4.3.0",
     "authors": [
         {
             "name": "Andrii Yakovlev",
@@ -23,11 +23,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.2",
-        "symfony/console": "^4.2",
-        "symfony/lock": "^4.2",
-        "symfony/dependency-injection": "^4.2",
-        "symfony/config": "^4.2",
-        "symfony/event-dispatcher": "^4.2"
+        "php": "^7.3",
+        "symfony/console": "^4.3",
+        "symfony/lock": "^4.3",
+        "symfony/dependency-injection": "^4.3",
+        "symfony/config": "^4.3",
+        "symfony/event-dispatcher": "^4.3"
     }
 }
