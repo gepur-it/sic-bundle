@@ -3,7 +3,7 @@
     "description": "Single Instance Command Bundle",
     "type": "symfony-bundle",
     "license": "MIT",
-    "version": "5.0.0",
+    "version": "5.0.1",
     "authors": [
         {
             "name": "Andrii Yakovlev",
@@ -25,7 +25,7 @@
     "require": {
         "php": "^7.3",
         "symfony/console": ">=4.3",
-        "symfony/lock": ">=4.3",
+        "symfony/lock": "^5.0",
         "symfony/dependency-injection": ">=4.3",
         "symfony/config": ">=4.3",
         "symfony/event-dispatcher": ">=4.3"

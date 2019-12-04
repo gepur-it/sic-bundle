@@ -12,7 +12,7 @@ use GepurIt\SingleInstanceCommandBundle\Contract\SingleInstanceInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Event\ConsoleCommandEvent;
 use Symfony\Component\Console\Exception\LogicException;
-use Symfony\Component\Lock\Factory as LockFactory;
+use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Lock\Lock;
 
 /**
