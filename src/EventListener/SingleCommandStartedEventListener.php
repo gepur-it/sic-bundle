@@ -14,20 +14,18 @@ use Symfony\Component\Console\Event\ConsoleCommandEvent;
 use Symfony\Component\Console\Exception\LogicException;
 use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Lock\Lock;
+use Symfony\Component\Lock\LockInterface;
 
 /**
- * Class SingleCommandEventListener
+ * Class SingleCommandStartedEventListener
+ * @package GepurIt\SingleInstanceCommandBundle\EventListener
  */
 class SingleCommandStartedEventListener
 {
-    /** @var LockFactory */
-    private $lockFactory;
-
-    /** @var LoggerInterface */
-    private $logger;
-
-    /** @var Lock|null */
-    private $lock;
+    private LockFactory $lockFactory;
+    private LoggerInterface $logger;
+    /** @var LockInterface|Lock|null  */
+    private ?LockInterface $lock = null;
 
     /**
      * SingleCommandEventListener constructor.

@@ -15,15 +15,15 @@ use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 
 /**
  * Class SingleInstanceCommandBundle
+ * @package GepurIt\SingleInstanceCommandBundle
  */
 class SingleInstanceCommandBundle
 {
+    protected ?ContainerInterface $container = null;
 
     /**
-     * @var ContainerInterface
+     * @param ContainerInterface|null $container
      */
-    protected $container;
-
     public function setContainer(ContainerInterface $container = null)
     {
         $this->container = $container;
@@ -68,7 +68,7 @@ class SingleInstanceCommandBundle
      *
      * @return string The Bundle name
      */
-    public function getName()
+    public function getName(): string
     {
         return 'SingleInstanceCommandBundle';
     }
@@ -78,7 +78,7 @@ class SingleInstanceCommandBundle
      *
      * @return string The Bundle namespace
      */
-    public function getNamespace()
+    public function getNamespace(): string
     {
         return 'GepurIt\SingleInstanceCommandBundle';
     }
@@ -90,7 +90,7 @@ class SingleInstanceCommandBundle
      *
      * @return string The Bundle absolute path
      */
-    public function getPath()
+    public function getPath(): string
     {
         return __DIR__;
     }
